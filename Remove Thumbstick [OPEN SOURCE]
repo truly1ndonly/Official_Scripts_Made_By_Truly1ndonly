@@ -1,4 +1,4 @@
-
+-- Open Source, Made By @truly1ndonly.
 local function setVisibilityAndTransparency()
     
     local dynamicThumbstickFrame = game:GetService("Players").LocalPlayer.PlayerGui.TouchGui.TouchControlFrame:FindFirstChild("DynamicThumbstickFrame")
