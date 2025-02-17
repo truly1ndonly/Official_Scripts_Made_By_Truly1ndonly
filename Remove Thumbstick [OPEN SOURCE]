@@ -1,0 +1,28 @@
+
+local function setVisibilityAndTransparency()
+    
+    local dynamicThumbstickFrame = game:GetService("Players").LocalPlayer.PlayerGui.TouchGui.TouchControlFrame:FindFirstChild("DynamicThumbstickFrame")
+    
+    if dynamicThumbstickFrame then
+        
+        dynamicThumbstickFrame.Visible = false
+    else
+        warn("DynamicThumbstickFrame not found in TouchControlFrame.")
+    end
+
+    
+    local jumpButton = game:GetService("Players").LocalPlayer.PlayerGui.TouchGui.TouchControlFrame:FindFirstChild("JumpButton")
+    
+    if jumpButton then
+        
+        jumpButton.ImageTransparency = 1
+    else
+        warn("JumpButton not found in TouchControlFrame.")
+    end
+end
+
+
+while true do
+    setVisibilityAndTransparency()
+    wait(0.1)
+end
